@@ -1,0 +1,14 @@
+# Optional defaults for the benchmark. CLI flags override these.
+# Run with: python -m bench run --config bench.toml
+
+[bench]
+model = "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+# Documented alternative (non-gated): "Qwen/Qwen2.5-1.5B-Instruct"
+configs = "bf16,int8,int4"
+device = "auto"
+max_new_tokens = 128
+runs = 10
+warmup = 2
+seed = 0
+out_dir = "results"
+stem = "run"

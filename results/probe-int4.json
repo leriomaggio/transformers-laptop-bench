@@ -1,0 +1,55 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "device": "mps",
+  "max_new_tokens": 64,
+  "warmup": 1,
+  "runs": 3,
+  "seed": 0,
+  "hardware": {
+    "device": "mps",
+    "chip": "Apple M3 Pro",
+    "cpu_count": 12,
+    "total_ram_gb": 36.0,
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python_version": "3.13.13",
+    "torch_version": "2.12.0",
+    "transformers_version": "5.11.0",
+    "quanto_version": "0.2.7"
+  },
+  "results": [
+    {
+      "config": "int4",
+      "prompt_label": "short",
+      "input_tokens": 63,
+      "output_tokens": 64,
+      "load_seconds": 2.799,
+      "ttft_p50_s": 0.8931,
+      "ttft_p95_s": 1.4828,
+      "total_p50_s": 58.6228,
+      "total_p95_s": 61.2304,
+      "throughput_p50_tok_s": 1.09,
+      "throughput_p95_tok_s": 1.15,
+      "peak_memory_mb": 3706.2,
+      "memory_method": "torch.mps.current_allocated_memory (peak sampled)",
+      "skipped": false,
+      "skip_reason": null
+    },
+    {
+      "config": "int4",
+      "prompt_label": "long",
+      "input_tokens": 271,
+      "output_tokens": 64,
+      "load_seconds": 2.799,
+      "ttft_p50_s": 1.0069,
+      "ttft_p95_s": 1.0193,
+      "total_p50_s": 54.7975,
+      "total_p95_s": 55.9708,
+      "throughput_p50_tok_s": 1.17,
+      "throughput_p95_tok_s": 1.19,
+      "peak_memory_mb": 4047.9,
+      "memory_method": "torch.mps.current_allocated_memory (peak sampled)",
+      "skipped": false,
+      "skip_reason": null
+    }
+  ]
+}

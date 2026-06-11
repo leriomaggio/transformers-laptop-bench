@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-laptop-bench"
+version = "0.1.0"
+description = "A small, reproducible benchmark for running open LLMs on consumer hardware"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = { text = "MIT" }
+authors = [{ name = "Valerio Maggio" }]
+keywords = ["llm", "benchmark", "transformers", "quantisation", "apple-silicon"]
+
+# Versions are pinned after a real resolve on Apple Silicon (M3 Pro, macOS,
+# Python 3.13). See the README for the recorded environment.
+dependencies = [
+    "torch==2.12.0",
+    "transformers==5.11.0",
+    "optimum-quanto==0.2.7",
+    "huggingface-hub==1.19.0",
+    "psutil==7.2.2",
+]
+
+[project.scripts]
+bench = "bench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bench"]

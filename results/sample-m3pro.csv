@@ -1,0 +1,5 @@
+config,prompt_label,input_tokens,output_tokens,load_seconds,ttft_p50_s,ttft_p95_s,total_p50_s,total_p95_s,throughput_p50_tok_s,throughput_p95_tok_s,peak_memory_mb,memory_method,skipped,skip_reason
+bf16,short,63,128,1.759,0.0629,0.0696,4.5319,4.5934,28.24,28.57,3301.9,torch.mps.current_allocated_memory (peak sampled),False,
+bf16,long,271,128,1.759,0.2359,0.2534,5.0611,5.5035,25.29,25.94,3355.1,torch.mps.current_allocated_memory (peak sampled),False,
+int8,short,63,128,1.825,0.2374,0.2687,27.8081,28.8405,4.6,4.77,3593.5,torch.mps.current_allocated_memory (peak sampled),False,
+int8,long,271,128,1.825,0.4524,0.4662,30.2526,31.5329,4.23,4.48,4479.3,torch.mps.current_allocated_memory (peak sampled),False,

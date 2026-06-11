@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# uv
+uv.lock
+
+# Benchmark output, except the committed sample run
+results/*
+!results/sample-m3pro.json
+!results/sample-m3pro.csv
+!results/sample-m3pro.md
+!results/probe-int4.json
+!results/probe-int4.csv
+!results/probe-int4.md
+
+# Hugging Face cache (if redirected into the project)
+.cache/
