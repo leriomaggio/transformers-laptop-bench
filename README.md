@@ -1,4 +1,4 @@
-# transformers-laptop-bench
+# Benchmarking open LLM inference cost on consumer hardware
 
 A small benchmark that measures what it actually costs to run an open
 instruction-tuned language model on the hardware you already own. It reports
