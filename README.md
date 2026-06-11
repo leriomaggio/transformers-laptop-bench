@@ -1,4 +1,4 @@
-# llm-laptop-bench
+# transformers-laptop-bench
 
 A small benchmark that measures what it actually costs to run an open
 instruction-tuned language model on the hardware you already own. It reports

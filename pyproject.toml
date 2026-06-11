@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "llm-laptop-bench"
+name = "transformers-laptop-bench"
 version = "0.1.0"
 description = "A small, reproducible benchmark for running open LLMs on consumer hardware"
 readme = "README.md"
